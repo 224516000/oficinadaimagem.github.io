@@ -10,12 +10,31 @@
             font-size: 3em; /* Aumenta el tamaño de la fuente */
             text-align: center; /* Centra el texto */
         }
+
+        /* Estilo para la galería en horizontal */
+        .gallery {
+            display: flex; /* Utiliza flexbox para organizar los elementos en fila */
+            justify-content: center; /* Centra la galería horizontalmente */
+            gap: 10px; /* Espacio entre las imágenes y videos */
+            margin-top: 20px; /* Margen superior para separar la galería del contenido anterior */
+        }
+
+        .gallery-item {
+            flex: 1 1 auto; /* Permite que los elementos se ajusten al tamaño disponible */
+            max-width: 200px; /* Limita el ancho máximo de las imágenes/videos */
+        }
+
+        .gallery-item img, .gallery-item video {
+            width: 100%; /* Asegura que las imágenes/videos ocupen todo el ancho disponible */
+            height: auto; /* Mantiene la proporción de las imágenes/videos */
+        }
     </style>
 </head>
 <body>
     <h1>Oficina da Imagem</h1>
-</body>
+
     <h1>Video and Photography</h1>
+
     <!-- Aquí comienza la galería de fotos y videos -->
     <div class="gallery">
         <!-- Foto 1 -->
@@ -48,6 +67,3 @@
     <!-- Fin de la galería de fotos y videos -->
 </body>
 </html>
-
-
-
