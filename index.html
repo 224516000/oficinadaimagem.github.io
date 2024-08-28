@@ -15,27 +15,27 @@
         .gallery {
             display: flex; /* Utiliza flexbox para organizar los elementos en fila */
             justify-content: center; /* Centra la galería horizontalmente */
-            gap: 10px; /* Espacio entre las imágenes y videos */
+            gap: 10px; /* Espacio entre las imágenes */
             margin-top: 20px; /* Margen superior para separar la galería del contenido anterior */
         }
 
         .gallery-item {
             flex: 1 1 auto; /* Permite que los elementos se ajusten al tamaño disponible */
-            max-width: 200px; /* Limita el ancho máximo de las imágenes/videos */
+            max-width: 200px; /* Limita el ancho máximo de las imágenes */
         }
 
-        .gallery-item img, .gallery-item video {
-            width: 100%; /* Asegura que las imágenes/videos ocupen todo el ancho disponible */
-            height: auto; /* Mantiene la proporción de las imágenes/videos */
+        .gallery-item img {
+            width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible */
+            height: auto; /* Mantiene la proporción de las imágenes */
         }
     </style>
 </head>
 <body>
-    <h1>Oficina da Imagem</h1>
+    <h1>Kreativetek</h1>
 
-    <h1>Video and Photography</h1>
+    <h1>Photography Gallery</h1>
 
-    <!-- Aquí comienza la galería de fotos y videos -->
+    <!-- Aquí comienza la galería de fotos -->
     <div class="gallery">
         <!-- Foto 1 -->
         <div class="gallery-item">
@@ -45,25 +45,11 @@
         <div class="gallery-item">
             <img src="foto2.jpg" alt="Descripción de la foto 2">
         </div>
-        <!-- Video 1 -->
-        <div class="gallery-item">
-            <video controls>
-                <source src="video1.mp4" type="video/mp4">
-                Tu navegador no soporta la etiqueta de video.
-            </video>
-        </div>
         <!-- Foto 3 -->
         <div class="gallery-item">
             <img src="foto3.jpg" alt="Descripción de la foto 3">
         </div>
-        <!-- Video 2 -->
-        <div class="gallery-item">
-            <video controls>
-                <source src="video2.mp4" type="video/mp4">
-                Tu navegador no soporta la etiqueta de video.
-            </video>
-        </div>
     </div>
-    <!-- Fin de la galería de fotos y videos -->
+    <!-- Fin de la galería de fotos -->
 </body>
 </html>
